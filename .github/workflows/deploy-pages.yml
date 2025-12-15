@@ -20,7 +20,8 @@ jobs:
         run: |
           rm -rf public
           mkdir public
-          rsync -av --exclude='.git' --exclude='node_modules' --exclude='**/node_modules' ./ public/
+          # Exclude the publish directory itself to avoid copying it into itself
+          rsync -av --exclude='.git' --exclude='node_modules' --exclude='**/node_modules' --exclude='public' ./ public/
 
       - name: Deploy to gh-pages branch
         uses: JamesIves/github-pages-deploy-action@v4
