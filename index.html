@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Personal Portfolio</title>
+    <style>
+      body { font-family: system-ui, Arial, sans-serif; margin: 40px; }
+      header { margin-bottom: 24px }      .projects { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+      .card { border:1px solid #e1e4e8; padding:16px; border-radius:8px; background:#fff }
+      .card h3 { margin-top:0 }    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Personal Portfolio</h1>
+      <p>Welcome — this is a minimal placeholder page.</p>
+    </header>
+    <main>
+      <section>
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="card">
+            <img src="/assets/projects/react-ecommerce.svg" alt="React e-commerce" style="width:100%;height:auto;border-radius:6px;margin-bottom:12px" />
+            <h3>React E-commerce Web Application</h3>
+            <p>A React-based e-commerce store with product listings, cart, and checkout flow.</p>
+            <p><strong>Tech:</strong> React, Vite, Tailwind</p>
+            <p>
+              <a href="projects/react-ecommerce.html">Details</a>
+              &nbsp;|&nbsp;
+              <a href="https://github.com/SAIKUMARYAD/react-e-mooerce-web-application" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <img src="/assets/projects/weather-forecast.svg" alt="Weather forecast" style="width:100%;height:auto;border-radius:6px;margin-bottom:12px" />
+            <h3>Weather Forecast Web Application</h3>
+            <p>Simple weather lookup app that fetches current conditions and forecasts by city.</p>
+            <p><strong>Tech:</strong> Node.js, Express or client-side JS, OpenWeatherMap</p>
+            <p>
+              <a href="projects/weather-forecast.html">Details</a>
+              &nbsp;|&nbsp;
+              <a href="https://github.com/SAIKUMARYAD/weather-forecast-web-application" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
