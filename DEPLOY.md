@@ -5,7 +5,7 @@ This repository includes a GitHub Actions workflow that deploys the static site 
 
 - Workflow: `.github/workflows/deploy-pages.yml`
 - Trigger: `push` to `main` or manual `workflow_dispatch`
-- What it does: copies repository files (excluding `node_modules` and `.git`) into `public`, uploads the artifact, and calls the Pages deploy action.
+- What it does: copies repository files (excluding `node_modules` and `.git`) into `public` and deploys them to the `gh-pages` branch using `JamesIves/github-pages-deploy-action`.
 
 Notes:
 - The workflow uses the built-in `GITHUB_TOKEN` so no additional secrets are required.
